@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cybersecurity Quiz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+
+<h1>Cybersecurity Quiz</h1>
+<form action="action_page.php" method="GET" target="_blank">
+
+  <label for="firstName">First Name:</label><br>
+  <input type="text" id="firstName" name="firstName"><br>
+
+  <label for="lastName">Last Name:</label><br>
+  <input type="text" id="lastName" name="lastName"><br>
+
+  <label for="email">email:</label><br>
+  <input type="email" id="email" name="email"><br>
+
+  <label for="password">password:</label><br>
+  <input type="password" id="password" name="password"><br>
+
+  <!--Question 1 (Multiple Choice - Radio Buttons)-->
+  <p>1) What does "VPN" stand for?</p>
+  <input type="radio" id="q1a" name="q1" value="Virtual Private Network">
+  <label for="q1a">Virtual Private Network</label><br>
+
+  <input type="radio" id="q1b" name="q1" value="Verified Public Network">
+  <label for="q1b">Verified Public Network</label><br>
+
+  <input type="radio" id="q1c" name="q1" value="Visual Privacy Node">
+  <label for="q1c">Visual Privacy Node</label><br>
+  <hr>
+
+  <!--Question 2 (Multiple Choice - Radio Buttons)-->
+  <p>2) Which of these is the strongest password?</p>
+  <input type="radio" id="q2a" name="q2" value="password123">
+  <label for="q2a">password123</label><br>
+
+  <input type="radio" id="q2b" name="q2" value="Kevin2026">
+  <label for="q2b">Kevin2026</label><br>
+
+  <input type="radio" id="q2c" name="q2" value="T9!vQ2#rL7@x">
+  <label for="q2c">T9!vQ2#rL7@x</label><br>
+  <hr>
+
+  <!--Question 3 (Multiple Answer - Checkboxes)-->
+  <p>3) Which of the following are examples of multi-factor authentication (MFA)? (Select all that apply)</p>
+  <input type="checkbox" id="q3a" name="q3a" value="Text message code">
+  <label for="q3a">Text message code</label><br>
+
+  <input type="checkbox" id="q3b" name="q3b" value="Fingerprint">
+  <label for="q3b">Fingerprint</label><br>
+
+  <input type="checkbox" id="q3c" name="q3c" value="A secret question">
+  <label for="q3c">A secret question</label><br>
+
+  <input type="checkbox" id="q3d" name="q3d" value="Authenticator app code">
+  <label for="q3d">Authenticator app code</label><br>
+  <hr>
+
+  <!--Question 4 (Multiple Answer - Checkboxes)-->
+  <p>4) Which of these are common signs of a phishing email? (Select all that apply)</p>
+  <input type="checkbox" id="q4a" name="q4a" value="Urgent threats like 'Act now!'">
+  <label for="q4a">Urgent threats like "Act now!"</label><br>
+
+  <input type="checkbox" id="q4b" name="q4b" value="Spelling and grammar mistakes">
+  <label for="q4b">Spelling and grammar mistakes</label><br>
+
+  <input type="checkbox" id="q4c" name="q4c" value="A normal company email address">
+  <label for="q4c">A normal company email address</label><br>
+
+  <input type="checkbox" id="q4d" name="q4d" value="Suspicious links asking for login info">
+  <label for="q4d">Suspicious links asking for login info</label><br>
+
+  <label for="question">Any comments?</label><br>
+  <textarea name="question" id="question" rows="10" cols="30">
+
+  </textarea>
+  <br>
+
+  <input type="submit" value=" click to submit"><input type="reset" value="reset form">
+
+</form>
+
+    </section>
+  </body>
+</html>
