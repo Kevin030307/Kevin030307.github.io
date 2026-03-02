@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //define a function.
+            function calculateTax()
+            {
+                //get purchase amount from textbox
+                var purchase = document.getElementById("purchase").value;
+
+                //calculate tax and total
+                var tax = purchase * 0.0825;
+                var total = Number(purchase) + tax;
+
+                //output to disabled textboxes
+                document.getElementById("tax").value = tax.toFixed(2);
+                document.getElementById("total").value = total.toFixed(2);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Tax Calculator</h2>
+        <form>
+            <label for="purchase">Purchase Amount:</label><br>
+            <input type="text" id="purchase" name="purchase" value=""><br>
+
+            <label for="tax">Tax Amount:</label><br>
+            <input type="text" id="tax" name="tax" value="" disabled><br>
+
+            <label for="total">Total:</label><br>
+            <input type="text" id="total" name="total" value="" disabled><br><br>
+
+            <input type="button" value="Click Here to Calculate" onclick="calculateTax()">
+        </form>
+    </body>
+</html>
