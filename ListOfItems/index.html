@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favorite Items</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: teal;
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #222;
+            margin: 8px auto;
+            padding: 10px;
+            width: 250px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>My 10 Favorite Things</h2>
+
+    <div id="output"></div>
+
+    <script>
+        // Array with 10 favorite items
+        var favorites = [
+            "Tacos",
+            "Enchiladas",
+            "Tamales",
+            "Pozole",
+            "Halo 3",
+            "Halo Reach",
+            "PS4 Pro",
+            "Gaming PC",
+            "Hot Cheetos",
+            "Street Corn (Elote)"
+        ];
+
+        var list = "<ul>";
+
+        // Loop through the array
+        for (var i = 0; i < favorites.length; i++)
+        {
+            list += "<li>" + favorites[i] + "</li>";
+        }
+
+        list += "</ul>";
+
+        // Output to webpage
+        document.getElementById("output").innerHTML = list;
+    </script>
+
+  </body>
+</html>
