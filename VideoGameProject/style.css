@@ -1,0 +1,29 @@
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+th, td {
+    border: 1px solid #2e3b4e;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #107c10; /* Xbox Green */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+caption {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #2e3b4e;
+}
